@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#1a0826;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    color:#ffffff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:17px;
+}
+
+nav ul li a:hover{
+    color:#d8b4fe;
+}
+
+#menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Home Section */
+
+#home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 60px;
+
+    background: linear-gradient(
+    135deg,
+    #140021,
+    #2d0b45,
+    #4b136e
+    );
+}
+
+.home-text{
+    max-width:600px;
+}
+
+.home-text h3{
+    font-size:28px;
+}
+
+.home-text h1{
+    font-size:75px;
+    color:#d8b4fe;
+    margin-top:10px;
+}
+
+.home-text h2{
+    margin-top:10px;
+    font-size:32px;
+}
+
+.home-text p{
+    margin-top:20px;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* Buttons */
+
+.buttons{
+    margin-top:30px;
+}
+
+button{
+    padding:13px 28px;
+    border:none;
+    border-radius:8px;
+    background:#c084fc;
+    color:white;
+    cursor:pointer;
+    margin-right:15px;
+    transition:0.3s;
+    font-size:16px;
+    font-weight:600;
+}
+
+button:hover{
+    background:#a855f7;
+    transform:scale(1.05);
+}
+
+.btn2{
+    background:transparent;
+    border:2px solid white;
+}
+
+/* Social Icons */
+
+.social-icons{
+    margin-top:35px;
+}
+
+.social-icons i{
+    font-size:30px;
+    margin-right:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.social-icons i:hover{
+    color:#e9d5ff;
+    transform:translateY(-5px);
+}
+
+/* Home Image */
+
+.home-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+
+    box-shadow:0 0 35px #c084fc;
+}
+
+/* About */
+
+#about{
+    padding:100px 8%;
+    background:white;
+    color:black;
+}
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-text h1{
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.about-text p{
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* Skills */
+
+#skills{
+    padding:100px 8%;
+    text-align:center;
+}
+
+#skills h1{
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.skills-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.box{
+    background:#1e293b;
+    padding:35px;
+    width:180px;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:18px;
+    font-weight:500;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    background:#7e22ce;
+}
+
+/* Contact */
+
+#contact{
+    padding:100px 8%;
+    text-align:center;
+    background:#111827;
+}
+
+#contact h1{
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+#contact p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:black;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    #home{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:140px;
+    }
+
+    .home-image img{
+        width:270px;
+        height:270px;
+        margin-bottom:40px;
+    }
+
+    .home-text h1{
+        font-size:55px;
+    }
+
+    .home-text h2{
+        font-size:25px;
+    }
+
+    .buttons{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        background:#1a0826;
+        position:absolute;
+        top:80px;
+        right:0;
+        width:220px;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    nav ul li{
+        margin:20px 0;
+    }
+
+    #menu-btn{
+        display:block;
+    }
+
+    .home-text h1{
+        font-size:45px;
+    }
+
+    .home-text h2{
+        font-size:22px;
+    }
+
+    .home-text p{
+        font-size:15px;
+    }
+
+    .about-text h1,
+    #skills h1,
+    #contact h1{
+        font-size:38px;
+    }
+
+}
