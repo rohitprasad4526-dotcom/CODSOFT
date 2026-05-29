@@ -60,11 +60,11 @@ nav ul li a:hover{
 /* Home Section */
 
 #home{
-    min-height:100vh;
+    min-height:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:120px 8% 60px;
+    padding:90px 8% 40px;
 
     background: linear-gradient(
     135deg,
@@ -250,7 +250,7 @@ footer{
     #home{
         flex-direction:column-reverse;
         text-align:center;
-        padding-top:140px;
+        padding-top:90px;
     }
 
     .home-image img{
